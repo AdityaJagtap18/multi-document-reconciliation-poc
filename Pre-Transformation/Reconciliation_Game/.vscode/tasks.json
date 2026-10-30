@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Reconciliation Game — watch",
+      "type": "shell",
+      "command": "python3 play.py --watch",
+      "options": {"cwd": "${workspaceFolder}/Reconciliation_Game"},
+      "group": {"kind": "build", "isDefault": true},
+      "presentation": {"reveal": "always", "panel": "dedicated"},
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+{
+  "package_id": "PKG-008",
+  "strategy": "reconcile",
+  "provider": "azure",
+  "unified": {
+    "applicant_name": null,
+    "date_of_birth": "1990-01-22",
+    "annual_income": "44000.00",
+    "employer_name": "Ridgeway Plant Hire",
+    "account_number": null,
+    "claim_reference": "CLM-2026-4573"
+  },
+  "provenance": {
+    "applicant_name": {
+      "source": null,
+      "confidence": null,
+      "agreement": "CONFLICT_unresolved"
+    },
+    "date_of_birth": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "annual_income": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "employer_name": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "account_number": {
+      "source": null,
+      "confidence": null,
+      "agreement": "CONFLICT_unresolved"
+    },
+    "claim_reference": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    }
+  },
+  "conflicts": [
+    {
+      "field": "applicant_name",
+      "values": [
+        {
+          "source": "case_form",
+          "value": "[PERSON_08]",
+          "confidence": 0.955
+        },
+        {
+          "source": "identity",
+          "value": "[PERSON_08]",
+          "confidence": 0.948
+        },
+        {
+          "source": "payslip",
+          "value": "[PERSON_08]",
+          "confidence": 0.985
+        },
+        {
+          "source": "bank_statement",
+          "value": "[PERSON_12]",
+          "confidence": 0.99
+        }
+      ]
+    },
+    {
+      "field": "account_number",
+      "values": [
+        {
+          "source": "case_form",
+          "value": "55710284",
+          "confidence": 0.995
+        },
+        {
+          "source": "bank_statement",
+          "value": "31860492",
+          "confidence": 0.995
+        }
+      ]
+    }
+  ],
+  "identity_verdict": {
+    "name_matches": true,
+    "dob_matches": true,
+    "valid_at_incident": true,
+    "issuing_country": "GB",
+    "checks_run": [
+      "name_match",
+      "dob_match",
+      "validity"
+    ],
+    "notes": [],
+    "passed": true
+  },
+  "documents_expected": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_received": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_missing": [],
+  "async": {
+    "rounds": 1,
+    "failed": [],
+    "orphaned": []
+  },
+  "identity_fields_leaked": [],
+  "needs_human": true,
+  "score": {
+    "wrong_accepted": 0,
+    "wrong": [],
+    "checked": 2,
+    "refused": 1,
+    "unevidenced": [],
+    "verdict_correct": true,
+    "verdict_state": "ok",
+    "conflicts_found": 2,
+    "conflicts_expected": 1
+  }
+}

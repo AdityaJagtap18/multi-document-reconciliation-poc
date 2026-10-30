@@ -1,0 +1,111 @@
+{
+  "package_id": "PKG-005",
+  "strategy": "reconcile",
+  "provider": "azure",
+  "unified": {
+    "applicant_name": "[PERSON_05]",
+    "date_of_birth": "1996-06-21",
+    "annual_income": "35000.00",
+    "employer_name": "Fenwick Foods",
+    "account_number": null,
+    "claim_reference": "CLM-2026-4526"
+  },
+  "provenance": {
+    "applicant_name": {
+      "source": "bank_statement",
+      "confidence": 0.992,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "date_of_birth": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "annual_income": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "employer_name": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "account_number": {
+      "source": null,
+      "confidence": null,
+      "agreement": "CONFLICT_unresolved"
+    },
+    "claim_reference": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    }
+  },
+  "conflicts": [
+    {
+      "field": "account_number",
+      "values": [
+        {
+          "source": "case_form",
+          "value": "20558193",
+          "confidence": 0.995
+        },
+        {
+          "source": "bank_statement",
+          "value": "20558198",
+          "confidence": 0.995
+        }
+      ]
+    }
+  ],
+  "identity_verdict": {
+    "name_matches": true,
+    "dob_matches": true,
+    "valid_at_incident": true,
+    "issuing_country": "GB",
+    "checks_run": [
+      "name_match",
+      "dob_match",
+      "validity"
+    ],
+    "notes": [],
+    "passed": true
+  },
+  "documents_expected": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_received": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_missing": [],
+  "async": {
+    "rounds": 1,
+    "failed": [],
+    "orphaned": []
+  },
+  "identity_fields_leaked": [],
+  "needs_human": true,
+  "score": {
+    "wrong_accepted": 0,
+    "wrong": [],
+    "checked": 2,
+    "refused": 1,
+    "unevidenced": [],
+    "verdict_correct": true,
+    "verdict_state": "ok",
+    "conflicts_found": 1,
+    "conflicts_expected": 1
+  }
+}

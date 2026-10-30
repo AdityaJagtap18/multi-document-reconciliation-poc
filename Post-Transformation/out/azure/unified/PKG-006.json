@@ -1,0 +1,99 @@
+{
+  "package_id": "PKG-006",
+  "strategy": "reconcile",
+  "provider": "azure",
+  "unified": {
+    "applicant_name": "[PERSON_06]",
+    "date_of_birth": "1988-12-03",
+    "annual_income": "47000.00",
+    "employer_name": "Tarn Valley Motors",
+    "account_number": "63920174",
+    "claim_reference": "CLM-2026-4534"
+  },
+  "provenance": {
+    "applicant_name": {
+      "source": "bank_statement",
+      "confidence": 0.991,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "date_of_birth": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "annual_income": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "employer_name": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "account_number": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "claim_reference": {
+      "source": "case_form",
+      "confidence": 0.995,
+      "agreement": "all_agree",
+      "derived": false
+    }
+  },
+  "conflicts": [],
+  "identity_verdict": {
+    "name_matches": true,
+    "dob_matches": true,
+    "valid_at_incident": true,
+    "issuing_country": "GB",
+    "checks_run": [
+      "name_match",
+      "dob_match",
+      "validity"
+    ],
+    "notes": [],
+    "passed": true
+  },
+  "documents_expected": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_received": [
+    "bank_statement",
+    "case_form",
+    "identity"
+  ],
+  "documents_missing": [
+    "payslip"
+  ],
+  "async": {
+    "rounds": 1,
+    "failed": [],
+    "orphaned": []
+  },
+  "identity_fields_leaked": [],
+  "needs_human": true,
+  "score": {
+    "wrong_accepted": 0,
+    "wrong": [],
+    "checked": 2,
+    "refused": 0,
+    "unevidenced": [
+      "annual_income"
+    ],
+    "verdict_correct": true,
+    "verdict_state": "ok",
+    "conflicts_found": 0,
+    "conflicts_expected": 0
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "package_id": "PKG-007",
+  "strategy": "reconcile",
+  "provider": "mock",
+  "unified": {
+    "applicant_name": "[PERSON_07]",
+    "date_of_birth": "1972-05-08",
+    "annual_income": null,
+    "employer_name": "Crowther Legal",
+    "account_number": "91447035",
+    "claim_reference": "CLM-2026-4548"
+  },
+  "provenance": {
+    "applicant_name": {
+      "source": "case_form",
+      "confidence": 0.95,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "date_of_birth": {
+      "source": "case_form",
+      "confidence": 0.94,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "annual_income": {
+      "source": null,
+      "confidence": null,
+      "agreement": "CONFLICT_unresolved"
+    },
+    "employer_name": {
+      "source": "payslip",
+      "confidence": 0.94,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "account_number": {
+      "source": "bank_statement",
+      "confidence": 0.96,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "claim_reference": {
+      "source": "case_form",
+      "confidence": 0.96,
+      "agreement": "all_agree",
+      "derived": false
+    }
+  },
+  "conflicts": [
+    {
+      "field": "annual_income",
+      "values": [
+        {
+          "source": "case_form",
+          "value": "58000.00",
+          "confidence": 0.94
+        },
+        {
+          "source": "payslip",
+          "value": 57999.96,
+          "confidence": 0.93
+        },
+        {
+          "source": "payslip_2",
+          "value": 73200.0,
+          "confidence": 0.93
+        }
+      ]
+    }
+  ],
+  "identity_verdict": {
+    "name_matches": true,
+    "dob_matches": true,
+    "valid_at_incident": true,
+    "issuing_country": "GB",
+    "checks_run": [
+      "name_match",
+      "dob_match",
+      "validity"
+    ],
+    "notes": [],
+    "passed": true
+  },
+  "documents_expected": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_received": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_missing": [],
+  "async": {
+    "rounds": 6,
+    "failed": [],
+    "orphaned": []
+  },
+  "identity_fields_leaked": [],
+  "needs_human": true,
+  "score": {
+    "wrong_accepted": 0,
+    "wrong": [],
+    "checked": 2,
+    "refused": 1,
+    "unevidenced": [],
+    "verdict_correct": true,
+    "verdict_state": "ok",
+    "conflicts_found": 1,
+    "conflicts_expected": 1
+  }
+}

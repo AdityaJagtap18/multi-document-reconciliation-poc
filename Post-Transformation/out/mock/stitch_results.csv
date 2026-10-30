@@ -1,0 +1,145 @@
+strategy,package,field,value,source,agreement
+trust_form,PKG-001,applicant_name,[PERSON_01],case_form,all_agree
+trust_form,PKG-001,date_of_birth,1987-04-12,case_form,all_agree
+trust_form,PKG-001,annual_income,42000.00,case_form,all_agree
+trust_form,PKG-001,employer_name,Halewood Logistics Ltd,payslip,all_agree
+trust_form,PKG-001,account_number,44182903,bank_statement,all_agree
+trust_form,PKG-001,claim_reference,CLM-2026-4471,case_form,all_agree
+trust_form,PKG-002,applicant_name,[PERSON_02],case_form,CONFLICT_resolved_to_form
+trust_form,PKG-002,date_of_birth,1991-09-30,case_form,all_agree
+trust_form,PKG-002,annual_income,38000.00,case_form,all_agree
+trust_form,PKG-002,employer_name,Brightwell Retail plc,case_form,all_agree
+trust_form,PKG-002,account_number,77219044,case_form,all_agree
+trust_form,PKG-002,claim_reference,CLM-2026-4482,case_form,all_agree
+trust_form,PKG-003,applicant_name,[PERSON_03],case_form,all_agree
+trust_form,PKG-003,date_of_birth,1979-11-05,case_form,all_agree
+trust_form,PKG-003,annual_income,51000.00,case_form,all_agree
+trust_form,PKG-003,employer_name,Kestrel Engineering,payslip,all_agree
+trust_form,PKG-003,account_number,10559871,bank_statement,all_agree
+trust_form,PKG-003,claim_reference,CLM-2026-4503,case_form,all_agree
+trust_form,PKG-004,applicant_name,[PERSON_04],case_form,all_agree
+trust_form,PKG-004,date_of_birth,1984-02-17,case_form,all_agree
+trust_form,PKG-004,annual_income,62000.00,case_form,CONFLICT_resolved_to_form
+trust_form,PKG-004,employer_name,Marlow Care Group,payslip,all_agree
+trust_form,PKG-004,account_number,88304127,bank_statement,all_agree
+trust_form,PKG-004,claim_reference,CLM-2026-4517,case_form,all_agree
+trust_form,PKG-005,applicant_name,[PERSON_05],case_form,all_agree
+trust_form,PKG-005,date_of_birth,1996-06-21,case_form,all_agree
+trust_form,PKG-005,annual_income,35000.00,case_form,all_agree
+trust_form,PKG-005,employer_name,Fenwick Foods,case_form,all_agree
+trust_form,PKG-005,account_number,20558193,case_form,CONFLICT_resolved_to_form
+trust_form,PKG-005,claim_reference,CLM-2026-4526,case_form,all_agree
+trust_form,PKG-006,applicant_name,[PERSON_06],case_form,all_agree
+trust_form,PKG-006,date_of_birth,1988-12-03,case_form,all_agree
+trust_form,PKG-006,annual_income,47000.00,case_form,all_agree
+trust_form,PKG-006,employer_name,Tarn Valley Motors,case_form,all_agree
+trust_form,PKG-006,account_number,63920174,bank_statement,all_agree
+trust_form,PKG-006,claim_reference,CLM-2026-4534,case_form,all_agree
+trust_form,PKG-007,applicant_name,[PERSON_07],case_form,all_agree
+trust_form,PKG-007,date_of_birth,1972-05-08,case_form,all_agree
+trust_form,PKG-007,annual_income,58000.00,case_form,CONFLICT_resolved_to_form
+trust_form,PKG-007,employer_name,Crowther Legal,payslip,all_agree
+trust_form,PKG-007,account_number,91447035,bank_statement,all_agree
+trust_form,PKG-007,claim_reference,CLM-2026-4548,case_form,all_agree
+trust_form,PKG-008,applicant_name,[PERSON_08],case_form,CONFLICT_resolved_to_form
+trust_form,PKG-008,date_of_birth,1990-01-22,case_form,all_agree
+trust_form,PKG-008,annual_income,44000.00,case_form,all_agree
+trust_form,PKG-008,employer_name,Ridgeway Plant Hire,case_form,all_agree
+trust_form,PKG-008,account_number,55710284,case_form,CONFLICT_resolved_to_form
+trust_form,PKG-008,claim_reference,CLM-2026-4573,case_form,all_agree
+trust_evidence,PKG-001,applicant_name,[PERSON_01],case_form,all_agree
+trust_evidence,PKG-001,date_of_birth,1987-04-12,case_form,all_agree
+trust_evidence,PKG-001,annual_income,42000.00,case_form,all_agree
+trust_evidence,PKG-001,employer_name,Halewood Logistics Ltd,payslip,all_agree
+trust_evidence,PKG-001,account_number,44182903,bank_statement,all_agree
+trust_evidence,PKG-001,claim_reference,CLM-2026-4471,case_form,all_agree
+trust_evidence,PKG-002,applicant_name,[PERSON_02B],identity,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-002,date_of_birth,1991-09-30,case_form,all_agree
+trust_evidence,PKG-002,annual_income,38000.00,case_form,all_agree
+trust_evidence,PKG-002,employer_name,Brightwell Retail plc,case_form,all_agree
+trust_evidence,PKG-002,account_number,77219044,case_form,all_agree
+trust_evidence,PKG-002,claim_reference,CLM-2026-4482,case_form,all_agree
+trust_evidence,PKG-003,applicant_name,[PERSON_03],case_form,all_agree
+trust_evidence,PKG-003,date_of_birth,1979-11-05,case_form,all_agree
+trust_evidence,PKG-003,annual_income,51000.00,case_form,all_agree
+trust_evidence,PKG-003,employer_name,Kestrel Engineering,payslip,all_agree
+trust_evidence,PKG-003,account_number,10559871,bank_statement,all_agree
+trust_evidence,PKG-003,claim_reference,CLM-2026-4503,case_form,all_agree
+trust_evidence,PKG-004,applicant_name,[PERSON_04],case_form,all_agree
+trust_evidence,PKG-004,date_of_birth,1984-02-17,case_form,all_agree
+trust_evidence,PKG-004,annual_income,43500.0,payslip,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-004,employer_name,Marlow Care Group,payslip,all_agree
+trust_evidence,PKG-004,account_number,88304127,bank_statement,all_agree
+trust_evidence,PKG-004,claim_reference,CLM-2026-4517,case_form,all_agree
+trust_evidence,PKG-005,applicant_name,[PERSON_05],case_form,all_agree
+trust_evidence,PKG-005,date_of_birth,1996-06-21,case_form,all_agree
+trust_evidence,PKG-005,annual_income,35000.00,case_form,all_agree
+trust_evidence,PKG-005,employer_name,Fenwick Foods,case_form,all_agree
+trust_evidence,PKG-005,account_number,20558198,bank_statement,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-005,claim_reference,CLM-2026-4526,case_form,all_agree
+trust_evidence,PKG-006,applicant_name,[PERSON_06],case_form,all_agree
+trust_evidence,PKG-006,date_of_birth,1988-12-03,case_form,all_agree
+trust_evidence,PKG-006,annual_income,47000.00,case_form,all_agree
+trust_evidence,PKG-006,employer_name,Tarn Valley Motors,case_form,all_agree
+trust_evidence,PKG-006,account_number,63920174,bank_statement,all_agree
+trust_evidence,PKG-006,claim_reference,CLM-2026-4534,case_form,all_agree
+trust_evidence,PKG-007,applicant_name,[PERSON_07],case_form,all_agree
+trust_evidence,PKG-007,date_of_birth,1972-05-08,case_form,all_agree
+trust_evidence,PKG-007,annual_income,57999.96,payslip,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-007,employer_name,Crowther Legal,payslip,all_agree
+trust_evidence,PKG-007,account_number,91447035,bank_statement,all_agree
+trust_evidence,PKG-007,claim_reference,CLM-2026-4548,case_form,all_agree
+trust_evidence,PKG-008,applicant_name,[PERSON_08],identity,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-008,date_of_birth,1990-01-22,case_form,all_agree
+trust_evidence,PKG-008,annual_income,44000.00,case_form,all_agree
+trust_evidence,PKG-008,employer_name,Ridgeway Plant Hire,case_form,all_agree
+trust_evidence,PKG-008,account_number,31860492,bank_statement,CONFLICT_resolved_by_precedence
+trust_evidence,PKG-008,claim_reference,CLM-2026-4573,case_form,all_agree
+reconcile,PKG-001,applicant_name,[PERSON_01],case_form,all_agree
+reconcile,PKG-001,date_of_birth,1987-04-12,case_form,all_agree
+reconcile,PKG-001,annual_income,42000.00,case_form,all_agree
+reconcile,PKG-001,employer_name,Halewood Logistics Ltd,payslip,all_agree
+reconcile,PKG-001,account_number,44182903,bank_statement,all_agree
+reconcile,PKG-001,claim_reference,CLM-2026-4471,case_form,all_agree
+reconcile,PKG-002,applicant_name,,,CONFLICT_unresolved
+reconcile,PKG-002,date_of_birth,1991-09-30,case_form,all_agree
+reconcile,PKG-002,annual_income,38000.00,case_form,all_agree
+reconcile,PKG-002,employer_name,Brightwell Retail plc,case_form,all_agree
+reconcile,PKG-002,account_number,77219044,case_form,all_agree
+reconcile,PKG-002,claim_reference,CLM-2026-4482,case_form,all_agree
+reconcile,PKG-003,applicant_name,[PERSON_03],case_form,all_agree
+reconcile,PKG-003,date_of_birth,1979-11-05,case_form,all_agree
+reconcile,PKG-003,annual_income,51000.00,case_form,all_agree
+reconcile,PKG-003,employer_name,Kestrel Engineering,payslip,all_agree
+reconcile,PKG-003,account_number,10559871,bank_statement,all_agree
+reconcile,PKG-003,claim_reference,CLM-2026-4503,case_form,all_agree
+reconcile,PKG-004,applicant_name,[PERSON_04],case_form,all_agree
+reconcile,PKG-004,date_of_birth,1984-02-17,case_form,all_agree
+reconcile,PKG-004,annual_income,,,CONFLICT_unresolved
+reconcile,PKG-004,employer_name,Marlow Care Group,payslip,all_agree
+reconcile,PKG-004,account_number,88304127,bank_statement,all_agree
+reconcile,PKG-004,claim_reference,CLM-2026-4517,case_form,all_agree
+reconcile,PKG-005,applicant_name,[PERSON_05],case_form,all_agree
+reconcile,PKG-005,date_of_birth,1996-06-21,case_form,all_agree
+reconcile,PKG-005,annual_income,35000.00,case_form,all_agree
+reconcile,PKG-005,employer_name,Fenwick Foods,case_form,all_agree
+reconcile,PKG-005,account_number,,,CONFLICT_unresolved
+reconcile,PKG-005,claim_reference,CLM-2026-4526,case_form,all_agree
+reconcile,PKG-006,applicant_name,[PERSON_06],case_form,all_agree
+reconcile,PKG-006,date_of_birth,1988-12-03,case_form,all_agree
+reconcile,PKG-006,annual_income,47000.00,case_form,all_agree
+reconcile,PKG-006,employer_name,Tarn Valley Motors,case_form,all_agree
+reconcile,PKG-006,account_number,63920174,bank_statement,all_agree
+reconcile,PKG-006,claim_reference,CLM-2026-4534,case_form,all_agree
+reconcile,PKG-007,applicant_name,[PERSON_07],case_form,all_agree
+reconcile,PKG-007,date_of_birth,1972-05-08,case_form,all_agree
+reconcile,PKG-007,annual_income,,,CONFLICT_unresolved
+reconcile,PKG-007,employer_name,Crowther Legal,payslip,all_agree
+reconcile,PKG-007,account_number,91447035,bank_statement,all_agree
+reconcile,PKG-007,claim_reference,CLM-2026-4548,case_form,all_agree
+reconcile,PKG-008,applicant_name,,,CONFLICT_unresolved
+reconcile,PKG-008,date_of_birth,1990-01-22,case_form,all_agree
+reconcile,PKG-008,annual_income,44000.00,case_form,all_agree
+reconcile,PKG-008,employer_name,Ridgeway Plant Hire,case_form,all_agree
+reconcile,PKG-008,account_number,,,CONFLICT_unresolved
+reconcile,PKG-008,claim_reference,CLM-2026-4573,case_form,all_agree

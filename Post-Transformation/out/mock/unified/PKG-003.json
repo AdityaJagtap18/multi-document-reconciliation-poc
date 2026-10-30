@@ -1,0 +1,98 @@
+{
+  "package_id": "PKG-003",
+  "strategy": "reconcile",
+  "provider": "mock",
+  "unified": {
+    "applicant_name": "[PERSON_03]",
+    "date_of_birth": "1979-11-05",
+    "annual_income": "51000.00",
+    "employer_name": "Kestrel Engineering",
+    "account_number": "10559871",
+    "claim_reference": "CLM-2026-4503"
+  },
+  "provenance": {
+    "applicant_name": {
+      "source": "case_form",
+      "confidence": 0.96,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "date_of_birth": {
+      "source": "case_form",
+      "confidence": 0.94,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "annual_income": {
+      "source": "case_form",
+      "confidence": 0.94,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "employer_name": {
+      "source": "payslip",
+      "confidence": 0.94,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "account_number": {
+      "source": "bank_statement",
+      "confidence": 0.96,
+      "agreement": "all_agree",
+      "derived": false
+    },
+    "claim_reference": {
+      "source": "case_form",
+      "confidence": 0.96,
+      "agreement": "all_agree",
+      "derived": false
+    }
+  },
+  "conflicts": [],
+  "identity_verdict": {
+    "name_matches": true,
+    "dob_matches": true,
+    "valid_at_incident": false,
+    "issuing_country": "GB",
+    "checks_run": [
+      "name_match",
+      "dob_match",
+      "validity"
+    ],
+    "notes": [
+      "identity document expired 2026-01-31, before the incident on 2026-03-14"
+    ],
+    "passed": false
+  },
+  "documents_expected": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_received": [
+    "bank_statement",
+    "case_form",
+    "identity",
+    "payslip"
+  ],
+  "documents_missing": [],
+  "async": {
+    "rounds": 6,
+    "failed": [],
+    "orphaned": []
+  },
+  "identity_fields_leaked": [],
+  "needs_human": true,
+  "score": {
+    "wrong_accepted": 0,
+    "wrong": [],
+    "checked": 2,
+    "refused": 0,
+    "unevidenced": [],
+    "verdict_correct": true,
+    "verdict_state": "ok",
+    "conflicts_found": 0,
+    "conflicts_expected": 0
+  }
+}

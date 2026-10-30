@@ -1,0 +1,10 @@
+# play.py, the engine and the self-test need NOTHING. Standard library only,
+# and they run on Python 3.7+.
+#
+# The Streamlit board (app.py) is the one thing in this project that needs
+# this file. It needs Python 3.9+ — streamlit>=1.30 does not install on
+# Python 3.7, and the board uses st.tabs, hide_index and use_container_width,
+# none of which exist in the streamlit that ships against 3.7. If `streamlit
+# run app.py` fails on your machine, check `python3 --version` first: run it
+# with python3.9 or python3.11 (or newer), not with whatever `python3` is.
+streamlit>=1.30
